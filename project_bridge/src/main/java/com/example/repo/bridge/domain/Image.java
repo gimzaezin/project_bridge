@@ -18,6 +18,7 @@ public class Image {
     private String url;     //경로
     private String name;
 
+    //브랜치테스트
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "postId")
