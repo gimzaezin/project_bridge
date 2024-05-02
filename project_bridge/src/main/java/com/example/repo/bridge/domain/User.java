@@ -1,9 +1,8 @@
 package com.example.repo.bridge.domain;
 
+import com.example.repo.bridge.request.RegisterUserRequest;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigInteger;
 import java.time.LocalDate;
@@ -14,7 +13,9 @@ import java.util.List;
 @Getter
 @Setter
 @Table
+@Generated
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
@@ -22,6 +23,8 @@ public class User {
     private String loginId;
 
     private String password;
+
+    private String name;
 
     private String email;
 
@@ -60,4 +63,13 @@ public class User {
     private GenderCode genderCode;
 //
 //    public User() {}
+    public User(RegisterUserRequest register){
+        this.loginId = register.getLoginId();
+        this.password = register.getPassword();
+        this.email = register.getEmail();
+        this.birth =  register.getBirth();
+        this.nickname = register.getNickname();
+        this.name = register.getName();
+        this.genderCode = register.getGenderCode();
+    }
 }
