@@ -7,6 +7,9 @@
 # BlueJ files
 *.ctxt
 
+#react
+node_modules
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
