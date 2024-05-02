@@ -33,7 +33,8 @@ public class Post {
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime endTime;
 
-    private int state;
+    @Enumerated(EnumType.STRING)
+    private StateCode stateCode;
 
     private  BigInteger viewCount;
 
