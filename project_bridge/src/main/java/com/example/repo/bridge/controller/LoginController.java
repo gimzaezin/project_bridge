@@ -3,7 +3,9 @@ package com.example.repo.bridge.controller;
 import com.example.repo.bridge.domain.User;
 import com.example.repo.bridge.request.LoginRequest;
 import com.example.repo.bridge.service.LoginService;
+import com.example.repo.bridge.web.SessionConst;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -34,6 +36,22 @@ public class LoginController {
             bindingResult.reject("loginFail", "아이디 또는 비밀번호가 맞지 않습니다.");
             return "/login";
         }
+
+        HttpSession session = request.getSession();
+        session.setAttribute(SessionConst.LOGIN_USER, loginUser);
+
         return "redirect:/";
     }
+
+
+    @PostMapping("/logout")
+    public String logout(HttpServletRequest request) {
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            session.invalidate();
+        }
+        return "redirect:/";
+    }
+
+
 }
