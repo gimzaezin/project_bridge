@@ -11,11 +11,14 @@ import lombok.Setter;
 public class UserHash {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
     private User user;
 
-    @Id
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "hashtagId")
     private Hashtag hashtag;

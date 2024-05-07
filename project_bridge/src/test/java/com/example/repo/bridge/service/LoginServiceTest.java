@@ -34,8 +34,10 @@ public class LoginServiceTest {
         loginRequest.setPassword("1234");
 
         User loginuser = loginService.login(loginRequest);
+        log.info(String.valueOf(loginuser.getUserId()));
         log.info(loginuser.getLoginId());
         log.info(loginuser.getPassword());
+        log.info(loginuser.getNickname());
         assertNotNull(loginuser);
     }
 
@@ -68,4 +70,4 @@ public class LoginServiceTest {
 }
 //INSERT INTO user_table (user_id, login_id, password, name, email, birth, introduction, nickname, state, gender_code)
 //    VALUES
-//    (1, 'kimjaejin', '1234', '김재진', 'kimjaejin@example.com', '2000-01-01', 'Hello, I am John Doe.', 'kim', 1, 'MALE');
+//    (1, 'kimjaejin', '1234', '김재진', 'kimjaejin@example.com', '2000-01-01', 'Hello, I am John Doe.', 'kim', 1, 100, 'MALE');

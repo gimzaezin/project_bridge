@@ -36,6 +36,8 @@ public class User {
 
     private int state;
 
+    private int score;
+
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "GENDER_ID")
 //    private Gender genderName;
