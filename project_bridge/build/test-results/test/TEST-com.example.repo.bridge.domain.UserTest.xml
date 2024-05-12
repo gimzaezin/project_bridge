@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.repo.bridge.domain.UserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-02T08:18:26" hostname="gimjeongmin-ui-MacBookAir.local" time="0.05">
+  <properties/>
+  <testcase name="asd()" classname="com.example.repo.bridge.domain.UserTest" time="0.05"/>
+  <system-out><![CDATA[2024-05-02T17:18:26.655+09:00  INFO 47176 --- [bridge] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.repo.bridge.domain.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-02T17:18:26.659+09:00  INFO 47176 --- [bridge] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.repo.bridge.BridgeApplication for test class com.example.repo.bridge.domain.UserTest
+Hibernate: 
+    insert 
+    into
+        user
+        (birth, email, gender_code, introduction, login_id, name, nickname, password, state) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        post
+        (content, created_at, end_time, start_time, state_code, title, user_id, view_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

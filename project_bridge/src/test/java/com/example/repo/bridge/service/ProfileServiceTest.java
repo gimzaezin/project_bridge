@@ -6,6 +6,7 @@ import com.example.repo.bridge.repository.hashtagrepository.DataJpaUserHashRepos
 import com.example.repo.bridge.repository.userrepository.DataJpaUserRepository;
 import com.example.repo.bridge.request.ProfileRequest;
 import jakarta.persistence.Tuple;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.type.descriptor.java.StringJavaType;
 import org.junit.jupiter.api.Assertions;
@@ -21,16 +22,11 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @SpringBootTest
+@RequiredArgsConstructor
 public class ProfileServiceTest {
-
-    @Autowired
     private ProfileService profileService;
-
-    @Autowired
     private DataJpaUserRepository dataJpaUserRepository;
-    @Autowired
     private DataJpaHashtagRepository dataJpaHashtagRepository;
-    @Autowired
     private DataJpaUserHashRepository dataJpaUserHashRepository;
 
     @Test

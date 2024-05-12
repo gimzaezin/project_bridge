@@ -1,15 +1,16 @@
 package com.example.repo.bridge.domain;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigInteger;
 
 @Entity
 @Table
-@Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Validate {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long validateId;
@@ -31,7 +32,13 @@ public class Validate {
     @JoinColumn(name = "postId")
     private Post post;
 
-
+    @Builder
+    public Validate(Template template, User fromUser, User toUser, Post post) {
+        this.template = template;
+        this.fromUser = fromUser;
+        this.toUser = toUser;
+        this.post = post;
+    }
 
 
 }

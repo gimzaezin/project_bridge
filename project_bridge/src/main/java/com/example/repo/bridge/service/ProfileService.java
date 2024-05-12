@@ -7,30 +7,27 @@ import com.example.repo.bridge.repository.hashtagrepository.DataJpaHashtagReposi
 import com.example.repo.bridge.repository.hashtagrepository.DataJpaUserHashRepository;
 import com.example.repo.bridge.repository.userrepository.DataJpaUserRepository;
 import com.example.repo.bridge.request.ProfileRequest;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@RequiredArgsConstructor
 public class ProfileService {
 
     private final DataJpaUserRepository userRepository;
     private final DataJpaHashtagRepository hashtagRepository;
     private final DataJpaUserHashRepository userHashRepository;
 
-    public ProfileService(DataJpaUserRepository userRepository, DataJpaHashtagRepository hashtagRepository, DataJpaUserHashRepository userHashRepository) {
-        this.userRepository = userRepository;
-        this.hashtagRepository = hashtagRepository;
-        this.userHashRepository = userHashRepository;
-    }
-
     public ProfileRequest getProfile(String nickname) {
 
         User profileUser = userRepository.findByNickname(nickname);
         Long userId = profileUser.getUserId();
         List<UserHash> userHashes = userHashRepository.findHashtagsByUser_UserId(userId);
-        List<Long> hashtagIds = userHashes.stream().map(UserHash::getHashtag).map(Hashtag::getHashtagId).collect(Collectors.toList());
+        List<Long> hashtagIds = userHashes.stream().map(UserHash::getHashtag)
+                                            .map(Hashtag::getHashtagId).collect(Collectors.toList());
         List<Hashtag> hashtags = hashtagRepository.findByHashtagIdIn(hashtagIds);
         List<String> hashtagNames = hashtags.stream().map(Hashtag::getHashtagName).toList();
 

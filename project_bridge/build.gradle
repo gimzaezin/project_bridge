@@ -35,7 +35,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation 'mysql:mysql-connector-java:8.0.32'
+
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.12' // 테스트 의존성 추가
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12' // 테스트 의존성 추가
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()

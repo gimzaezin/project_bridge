@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Transactional
-@Repository
 public interface DataJpaUserHashRepository extends JpaRepository<UserHash, Long> {
     List<UserHash> findHashtagsByUser_UserId(Long userId);
 }

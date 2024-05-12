@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.repo.bridge.service.UserServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-02T08:18:26" hostname="gimjeongmin-ui-MacBookAir.local" time="0.077">
+  <properties/>
+  <testcase name="signUp()" classname="com.example.repo.bridge.service.UserServiceTest" time="0.077"/>
+  <system-out><![CDATA[2024-05-02T17:18:26.715+09:00  INFO 47176 --- [bridge] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.repo.bridge.service.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-02T17:18:26.717+09:00  INFO 47176 --- [bridge] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.repo.bridge.BridgeApplication for test class com.example.repo.bridge.service.UserServiceTest
+Hibernate: 
+    insert 
+    into
+        user
+        (birth, email, gender_code, introduction, login_id, name, nickname, password, state) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.user_id,
+        u1_0.birth,
+        u1_0.email,
+        u1_0.gender_code,
+        u1_0.introduction,
+        u1_0.login_id,
+        u1_0.name,
+        u1_0.nickname,
+        u1_0.password,
+        u1_0.state 
+    from
+        user u1_0 
+    where
+        u1_0.login_id=? 
+        and u1_0.password=?
+s.toString() = com.example.repo.bridge.domain.User@2787abe4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
