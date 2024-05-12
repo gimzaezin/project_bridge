@@ -124,4 +124,18 @@ class RegisterServiceTest {
         });
         log.info("현재보다 과거의 날짜가 필요함");
     }
+
+    @Test
+    public void signUpGenderNull(){
+
+        RegisterUserRequest request = new RegisterUserRequest("김재진"
+                ,"kimjaejin","12341234"
+                ,"wjdals",
+                null, localDate,"aqaqaq");
+        //User user = registerService.signUp(request);
+        assertThrows(ConstraintViolationException.class, () -> {
+            registerService.signUp(request);
+        });
+        log.info("젠더코드 널");
+    }
 }
