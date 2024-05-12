@@ -1,6 +1,7 @@
 package com.example.repo.bridge.domain;
 
 import jakarta.persistence.*;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @Table
+@EqualsAndHashCode
 public class PostUser {
 
     @Id
