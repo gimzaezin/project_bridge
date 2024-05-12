@@ -2,6 +2,10 @@ package com.example.repo.bridge.domain;
 
 import com.example.repo.bridge.request.RegisterUserRequest;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.math.BigInteger;
@@ -20,18 +24,24 @@ public class User {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
+    @NotNull @Size(min = 6, max = 16)
     private String loginId;
 
+    @NotNull @Size(min = 6, max = 16)
     private String password;
 
+    @NotNull @Size(min = 2, max = 16)
     private String name;
 
+    @NotNull @Email
     private String email;
 
+    @NotNull @Past
     private LocalDate birth;
 
     private String introduction;
 
+    @NotNull @Size(min = 2, max = 12)
     private String nickname;
 
     private int state;
@@ -61,7 +71,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Post> posts;
 
-    @Enumerated(EnumType.STRING)
+    @NotNull @Enumerated(EnumType.STRING)
     private GenderCode genderCode;
 //
 //    public User() {}
@@ -73,5 +83,12 @@ public class User {
         this.nickname = register.getNickname();
         this.name = register.getName();
         this.genderCode = register.getGenderCode();
+    }
+
+    @Override
+    public String toString() {
+        return "로그인아이디 : " + this.loginId + "\n 닉네임 : " + this.nickname + "\n 성별 + " + this.genderCode +
+                "\n 자기소개 : " + this.introduction + "\n 이메일 : " + this.email + "\n 생일 : " + this.birth +
+                "\n 닉네임 : " + this.nickname  + "\n 매너점수 : " + this.score + "\n 상태 : " + this.state;
     }
 }
