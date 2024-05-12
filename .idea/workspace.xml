@@ -6,14 +6,43 @@
   <component name="ChangeListManager">
     <list default="true" id="c869f48e-9459-48de-8f01-c4b3d0b3f94d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_bridge/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_bridge/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_bridge/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_bridge/src/main/java/com/example/repo/bridge/domain/PostHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/src/main/java/com/example/repo/bridge/domain/PostHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_bridge/src/main/java/com/example/repo/bridge/domain/PostUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/src/main/java/com/example/repo/bridge/domain/PostUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_bridge/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/resources/main/sql/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/build/resources/main/sql/ddl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Comment.class.uniqueId13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/DataJpaHashtagRepository.class.uniqueId21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/DataJpaPostRepository.class.uniqueId23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/DataJpaUserHashRepository.class.uniqueId24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/DataJpaUserRepository.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Hashtag.class.uniqueId17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Image.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/LoginController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/LoginService.class.uniqueId14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/LoginUserArgumentResolver.class.uniqueId16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Post.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/PostHash.class.uniqueId19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/PostUser.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/ProfileController.class.uniqueId12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/ProfileService.class.uniqueId15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/RegisterController.class.uniqueId18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/RegisterService.class.uniqueId20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Template.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/TemplateRepository.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/UserHash.class.uniqueId25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Validate$ValidateBuilder.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/Validate.class.uniqueId22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/ValidateController.class.uniqueId9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/ValidateRepository.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/compileTransaction/stash-dir/ValidateService.class.uniqueId11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/src/main/java/com/example/repo/bridge/repository/postrepository/DataJpaPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/src/main/java/com/example/repo/bridge/repository/postrepository/DataJpaPostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_bridge/src/main/resources/sql/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/project_bridge/src/main/resources/sql/ddl.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +59,24 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bridge" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -131,7 +172,7 @@
       <workItem from="1715508338107" duration="65000" />
       <workItem from="1715510519040" duration="2661000" />
       <workItem from="1715529605066" duration="1315000" />
-      <workItem from="1715531212372" duration="598000" />
+      <workItem from="1715531212372" duration="4497000" />
     </task>
     <servers />
   </component>

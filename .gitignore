@@ -29,3 +29,6 @@ replay_pid*
 # 인텔리제이 관련 파일들 *.idea:ide옵션을 저장하는 폴더, *.iml: 모듈구성을 xml형태로 저장한 파일
 *.idea
 *.iml
+
+#application.properties추가
+application.properties
