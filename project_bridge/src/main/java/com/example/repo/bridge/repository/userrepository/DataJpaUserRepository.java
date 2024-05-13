@@ -11,4 +11,5 @@ public interface DataJpaUserRepository extends JpaRepository<User,Long> {
     User findByLoginIdAndPassword(String loginId, String password);
     User findByLoginId(String loginId);
     User findByNickname(String nickName);
+    User findByUserId(long id);
 }
