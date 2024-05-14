@@ -11,12 +11,13 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class RegisterService {
+public class UserService {
 
     private final DataJpaUserRepository dataJpaUserRepository;
 
-    public User signUp(RegisterUserRequest registerUserRequest) {
+    public User save(RegisterUserRequest registerUserRequest) {
         User user = new User(registerUserRequest);
         return dataJpaUserRepository.save(user);
+
     }
 }

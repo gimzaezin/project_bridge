@@ -2,10 +2,7 @@ package com.example.repo.bridge.request;
 
 import com.example.repo.bridge.domain.GenderCode;
 import com.example.repo.bridge.domain.User;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Past;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Generated;
@@ -19,12 +16,19 @@ import java.time.LocalDateTime;
 @Builder
 @Generated
 public class RegisterUserRequest {
+    @NotNull
     private String name;
+    @NotNull
     private String loginId;
+    @NotNull
     private String password;
+    @NotNull
     private String email;
+    @NotNull
     private GenderCode genderCode;
+    @NotNull
     private LocalDate birth;
+    @NotNull
     private String nickname;
 
 }
