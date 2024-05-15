@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Generated
 @Repository
 @ToString
@@ -18,4 +17,13 @@ public class UserUpdateRequest {
     private GenderCode genderCode;
     private String nickname;
     private String introduction;
+
+    @Builder
+    public UserUpdateRequest(String password, String email, String nickname, String introduction, GenderCode genderCode) {
+        this.password = password;
+        this.email = email;
+        this.nickname = nickname;
+        this.introduction = introduction;
+        this.genderCode = genderCode;
+    }
 }
